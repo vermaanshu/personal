@@ -10,11 +10,11 @@ import ExampleTwoDeepComponent from './components/ExampleTwoDeepComponent';
 
 
 const routes = (
-  <Route path="/" mapMenuTitle="Home" component={App}>
+  <Route path="/personal" mapMenuTitle="Home" component={App}>
     <IndexRoute component={Home} />
 
-    <Route path="example" mapMenuTitle="Example" component={ExampleComponent}>
-      <Route path="two-deep" mapMenuTitle="Two Deep" component={ExampleTwoDeepComponent} />
+    <Route path="/personal/example" mapMenuTitle="Example" component={ExampleComponent}>
+      <Route path="/personal/two-deep" mapMenuTitle="Two Deep" component={ExampleTwoDeepComponent} />
     </Route>
 
     <Route path="*" mapMenuTitle="Page Not Found" component={PageNotFound} />
